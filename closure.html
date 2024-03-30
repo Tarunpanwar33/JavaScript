@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+    <script>
+        // function outer() {
+        //     let username = 'Tarun';
+           
+        //     function inner() {
+        //         let secret = '1233'
+        //         console.log(username);
+                
+        //         function innertwo() {
+        //             console.log("innertwo", username);
+        //             console.log("innertwo",secret);
+        //         }
+        //     }
+            // inner()
+            // innertwo()
+
+            function makefunc() {
+                const name = 'Mozilla';
+
+                function displayname() {
+                    console.log(name);
+                }
+
+                return displayname;
+            }
+              
+        const myfun = makefunc();
+            myfun();
+    
+            document.getElementById('orange').onclick = function () {
+                document.body.style.backgroundColor = 'orange'
+            }
+            document.getElementById('green').onclick = function () {
+                document.body.style.backgroundColor = 'green'
+            }
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM</title>
+</head>
+<body>
+    <div>
+        <h1 id="heading" class="head">Welcome to the Dom</h1>
+        <h2 >query selector</h2>
+        <h2>query selector</h2>
+        <h2>query selector</h2>
+        <p id="para" class="paraghraph">Lorem ipsum dolor  </p>
+        
+        <input type="password" name=" ">
+        <ul>
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('heading').id;
+        document.getElementById('heading').className;
+
+       let title =   document.getElementById('heading')
+       title.style.backgroundColor = 'green'
+        title .style.color = 'blue'
+        title.innerHTML  
+        // its shows only displayed content only
+        title.innerText
+        // its shows  displayed content as well as inner content also means which are not visible during when we apply inner text. 
+        title.textContent
+      let para =  document.getElementById('para')
+       para.style.backgroundColor = 'red'
+      para.style.border = '2px solid'
+      para.style.borderRadius = '30px'
+      
+   
+      document.getElementById('heading').getAttribute;
+      document.getElementById('heading').setAttribute('class','header');
+    
+      document.querySelector("h2")
+      document.querySelectorAll('h2')
+        
+      document.querySelector("#heading")
+      document.querySelectorAll('.head')
+
+      /*document.querySelector('input[type = "password"]')
+       document.querySelector("p:first -child") 
+       document.querySelector("p:last -child")
+*/
+      document.querySelector('li')
+       const myul =  document.querySelector('li')
+       const turngreen  =  document.querySelector('li')
+       turngreen.style.backgroundColor = "green";
+      
+    /* document.querySelectorAll('li');
+     let templist = Document.querySelectorAll('li');
+     templist[0].style.color = 'green'
+     
+    */ 
+    // 2nd method
+     
+   
+     const myh1 = document.querySelectorAll('h1')
+     myh1[0].style.color = 'brown'
+     
+
+   </script>
+</body>
+</html>

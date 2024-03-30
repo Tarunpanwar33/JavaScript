@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .stop{
+        border: 3px solid;
+        height: 20px;
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <button id="stop">Button</button>
+    <h1></h1>
+    <script>
+      setTimeout(()=>{
+        console.log("hello Tarun");
+      },3000)
+
+        
+        let sayMyName = ()=>{
+            console.log("Hello tarun");
+        }
+
+        setInterval(sayMyName,30000)
+       
+      
+       const changetext = ()=>{
+        document.querySelector('h1').innerHTML = 'Best Js series';
+
+       }
+     const changeme =   setTimeout(changetext,4000)
+      
+     document.querySelector('#stop').addEventListener('click',()=>{
+       
+        console.log("stopped");
+     })
+
+        
+    </script>
+</body>
+</html>

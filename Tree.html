@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <title>Javascript practice</title>
+</body>
+<script>
+ const div = document.createElement('div')
+ console.log(div);
+ div.className ="main"
+ div.id = (Math.random()*10+1)
+ div.setAttribute('title','Hello JavaScript')
+ div.style.backgroundColor = 'red'
+ div.style.padding = '12px'
+ div.innerHTML = 'JavaScript'
+ const addtext = document.createTextNode('This is a javascript paractice set');
+ div.appendChild(addtext)
+ document.body.appendChild(div)
+
+ //=========================================================>>>>>>>>>
+
+ let div1 = document.createElement("h1")
+ console.log(div1);
+ div1.id = (Math.round(5.3));
+ const addcontent = document.createTextNode("Hello JavaScript");
+ div1.appendChild(addcontent);
+ document.body.appendChild(div1)
+
+//===========================================================>>>>>
+
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img id="one" src="./istockphoto-1058262630-1024x1024.jpg" alt="error loading imges"></li>
+            <li><img id="two" src="./istockphoto-1032516536-1024x1024.jpg" alt="error loading images"></li>
+            <li><img id="three" src="./istockphoto-1029147344-1024x1024.jpg" alt="error loading images"></li>
+            <li><img id="four" src="./istockphoto-1452604857-1024x1024.jpg" alt="error loading images"></li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.getElementById('images').addEventListener('click', function name(e) {
+        console.log("image  one clicked");
+    }, false);
+
+    document.getElementById('two').addEventListener('click', function name(e) {
+        console.log("image two clicked");
+        e.stopPropagation();
+    },
+     false)
+
+    document.getElementById('four').addEventListener('click', function name(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log("image two clicked");
+    }, false);
+
+    document.getElementById('images').addEventListener('click',function (e) {
+        console.log(e.target.parentNode);
+        let removeit = e.target.parentNode;
+        removeit.remove();
+    });
+
+
+</script>
+
+</html>

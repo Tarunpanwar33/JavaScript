@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+
+    <script>
+
+        const saydate = function (str) {
+            console.log("Tarun", Date.now());
+        }
+
+        const intervalid = setInterval(saydate, 2000, 'hi');
+        clearInterval(intervalid);
+
+        // START....
+        //<<<<<<<<====================================================>>>>>>>>>>>>>>>>>>>
+
+          let set
+         const start = function(str) {
+           set =  setInterval(() => {
+           console.log("Tarun",Math.random(),'hi');
+           }, 3000);
+         }
+
+         //STOP
+      //==============================================================>>>>>>>>>>>>>>>>>
+         
+         const stop = function(str) {
+          clearInterval(set) 
+        }
+            document.querySelector('#start').addEventListener('click',start);
+            document.querySelector('#stop').addEventListener('click',stop);
+
+
+    </script>
+</body>
+
+
+
+</html>
